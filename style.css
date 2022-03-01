@@ -53,10 +53,15 @@ header h1 {
     margin-left: 15px;
 }
 
+#brands > a > img {
+    width: 10%;
+    height: 10%;
+}
+
 /* Segments */
 #segments > h2 {
     font-family: 'Noto Serif Display', serif;
-    font-size: 60px;
+    font-size: clamp(60px, 50%, 40px);
     margin-bottom: 15px;
 
     background-image: linear-gradient(to bottom, #e9c6c4, #e6bcb9, #00000000);
@@ -68,24 +73,53 @@ header h1 {
 #segments > #segmentImages {
     background-color: #BB998E;
     padding-top: 10px;
-    padding-bottom: 10px;
     width: 77%;
 
+    display: flex;
     margin: auto;
 }
 
 #segments > #segmentImages > a {
-    margin: 5px;
+    margin: auto;
+    text-decoration: none;
 }
 
-#boca {
-    position: absolute;
-    z-index: 1;
+#segments > #segmentImages > a > #boca {
+    width: 24vw;
+    height: 3vh;
 
-    top: 132.5vh;
-    left: 18vw;
+    margin-bottom: 10px;
+    padding-top: 78%;
+    background-image: url(Assets/Segments/lipImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    font-size: 55px;
+#segments > #segmentImages > a > #rosto {
+    width: 24vw;
+    height: 3vh;
+
+    margin-bottom: 10px;
+    padding-top: 78%;
+    background-image: url(Assets/Segments/faceImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#segments > #segmentImages > a > #olhos {
+    width: 24vw;
+    height: 3vh;
+
+    margin-bottom: 10px;
+    padding-top: 78%;
+    background-image: url(Assets/Segments/eyeImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#boca > h3 {
+
+    font-size: clamp(45px, 50%, 55px);
     font-family: 'Noto Serif Display', serif;
 
     background-image: linear-gradient(to bottom, #AC3333 , #AC3333, #AC333300);
@@ -94,16 +128,9 @@ header h1 {
     -webkit-text-fill-color: transparent;
 }
 
-#rosto {
-    position: absolute;
-    z-index: 1;
-
-    top: 132.5vh;
-    left: 42.5vw;
-
-    font-size: 55px;
+#rosto > h3 {
+    font-size: clamp(45px, 50%, 55px);
     font-family: 'Noto Serif Display', serif;
-    
 
     background-image: linear-gradient(to bottom, #746868E0, #D9C6C6, #D9C6C6);
     background-clip: text;
@@ -111,15 +138,10 @@ header h1 {
     -webkit-text-fill-color: transparent;
 }
 
-#olhos {
-    position: absolute;
-    z-index: 1;
-
-    top: 132.5vh;
-    left: 67.5vw;
-
-    font-size: 55px;
+#olhos > h3  {
+    font-size: clamp(45px, 50%, 55px);
     font-family: 'Noto Serif Display', serif;
+
 
     background-image: linear-gradient(to bottom, #000000, #746868E0, #746868E0);
     background-clip: text;
