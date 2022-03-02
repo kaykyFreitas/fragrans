@@ -58,159 +58,28 @@ header > h1 {
     font-family: 'Noto Serif Display', serif;
 }
 
-#productsContainer > div {
-    width: 250px;
-    height: 300px;
 
-    border-radius: 10px;
-    background-color: #FFF;
-    border: 5px solid #B17575;
-    margin: 5px;
-}
 
-#productsGrid {
+.container{
+    background-color: # #E8CCB7;
+    width: 100%;
+    height: 210vh;
+
     display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    grid-template-rows: 350px 350px 350px 350px 350px;
-    grid-template-areas:    "BC BH BM BCR"
-                            "BCM BMFA HD HML"
-                            "BMM BMV BMR BL"
-                            "BMU BEC BR BM"
-                            "BUMV BUMR BUCV BUCN";
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 300px 300px 300px 300px 300px;
 
-    align-items: center;
-    justify-items: center;
-} 
+    grid-gap: 5px;
+    justify-content:center;
 
-#batomCremoso{
-    grid-area: BC;
+}
 
-    width: 250px;
-    height: 300px;
-
+.container > div {
+    background: #fff;
+    border: 5px solid #AC3333;
     border-radius: 10px;
-    background-color: #FFF;
-    border: 5px solid #B17575;
-    margin: 5px;
+
 }
-
-#batomHidratante {
-    grid-area: BH;
-
-        width: 250px;
-    height: 300px;
-
-    border-radius: 10px;
-    background-color: #FFF;
-    border: 5px solid #B17575;
-    margin: 5px;
-}
-
-#batomMatte {
-    grid-area: BM;
-
-        width: 250px;
-    height: 300px;
-
-    border-radius: 10px;
-    background-color: #FFF;
-    border: 5px solid #B17575;
-    margin: 5px;
-}
-
-#batomColors {
-    grid-area: BCR;
-
-        width: 250px;
-    height: 300px;
-
-    border-radius: 10px;
-    background-color: #FFF;
-    border: 5px solid #B17575;
-    margin: 5px;
-}
-
-#batomCreammyMatte {
-    grid-area: BCM;
-
-        width: 250px;
-    height: 300px;
-
-    border-radius: 10px;
-    background-color: #FFF;
-    border: 5px solid #B17575;
-    margin: 5px;
-}
-
-#batomMadeForAll {
-    grid-area: BMFA;
-
-        width: 250px;
-    height: 300px;
-
-    border-radius: 10px;
-    background-color: #FFF;
-    border: 5px solid #B17575;
-    margin: 5px;
-}
-
-#hidratanteDeleite {
-    grid-area: HD;
-}
-
-#hidratanteMelELeite {
-    grid-area: HML;
-}
-
-#batomMatteMarrom {
-    grid-area: BMM;
-}
-
-#batomMatteVermelho {
-    grid-area: BMV;
-}
-#batomMatteRosa {
-    grid-area: BMR;
-}
-
-#brilhoLabial {
-    grid-area: BL;
-}
-
-#batomMetalizadoUna {
-    grid-area: BMU;
-}
-
-#batomExtremoConforto {
-    grid-area: BEC;
-}
-
-#batomRosa {
-    grid-area: BR;
-}
-
-#batomMarrom {
-    grid-area: BM;
-}
-
-#batomUltraMatteVinho {
-    grid-area: BUMV;
-}
-
-#baotmUltraMatteRosa {
-    grid-area: BUMR;
-}
-
-#batomUltraCremosoVinho {
-    grid-area: BUCV;
-}
-
-#batomUltraCremosoNude {
-    grid-area: BUCN;
-}
-
-
-
 
 footer {
     display: grid;
