@@ -41,15 +41,305 @@ header > h1 {
 
 #productsContainer {
     width: 90%;
-    height: 150vh;
+    height: 100%;
+
+    padding: 10px;
 
     margin: auto;
     background-color: #E8CCB7;
 }
 
 #productsContainer > h2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
     font-size: 40px;
     font-weight: 300;
     color: #AC3333;
     font-family: 'Noto Serif Display', serif;
+}
+
+#productsContainer > div {
+    width: 250px;
+    height: 300px;
+
+    border-radius: 10px;
+    background-color: #FFF;
+    border: 5px solid #B17575;
+    margin: 5px;
+}
+
+#productsGrid {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 350px 350px 350px 350px 350px;
+    grid-template-areas:    "BC BH BM BCR"
+                            "BCM BMFA HD HML"
+                            "BMM BMV BMR BL"
+                            "BMU BEC BR BM"
+                            "BUMV BUMR BUCV BUCN";
+
+    align-items: center;
+    justify-items: center;
+} 
+
+#batomCremoso{
+    grid-area: BC;
+
+    width: 250px;
+    height: 300px;
+
+    border-radius: 10px;
+    background-color: #FFF;
+    border: 5px solid #B17575;
+    margin: 5px;
+}
+
+#batomHidratante {
+    grid-area: BH;
+
+        width: 250px;
+    height: 300px;
+
+    border-radius: 10px;
+    background-color: #FFF;
+    border: 5px solid #B17575;
+    margin: 5px;
+}
+
+#batomMatte {
+    grid-area: BM;
+
+        width: 250px;
+    height: 300px;
+
+    border-radius: 10px;
+    background-color: #FFF;
+    border: 5px solid #B17575;
+    margin: 5px;
+}
+
+#batomColors {
+    grid-area: BCR;
+
+        width: 250px;
+    height: 300px;
+
+    border-radius: 10px;
+    background-color: #FFF;
+    border: 5px solid #B17575;
+    margin: 5px;
+}
+
+#batomCreammyMatte {
+    grid-area: BCM;
+
+        width: 250px;
+    height: 300px;
+
+    border-radius: 10px;
+    background-color: #FFF;
+    border: 5px solid #B17575;
+    margin: 5px;
+}
+
+#batomMadeForAll {
+    grid-area: BMFA;
+
+        width: 250px;
+    height: 300px;
+
+    border-radius: 10px;
+    background-color: #FFF;
+    border: 5px solid #B17575;
+    margin: 5px;
+}
+
+#hidratanteDeleite {
+    grid-area: HD;
+}
+
+#hidratanteMelELeite {
+    grid-area: HML;
+}
+
+#batomMatteMarrom {
+    grid-area: BMM;
+}
+
+#batomMatteVermelho {
+    grid-area: BMV;
+}
+#batomMatteRosa {
+    grid-area: BMR;
+}
+
+#brilhoLabial {
+    grid-area: BL;
+}
+
+#batomMetalizadoUna {
+    grid-area: BMU;
+}
+
+#batomExtremoConforto {
+    grid-area: BEC;
+}
+
+#batomRosa {
+    grid-area: BR;
+}
+
+#batomMarrom {
+    grid-area: BM;
+}
+
+#batomUltraMatteVinho {
+    grid-area: BUMV;
+}
+
+#baotmUltraMatteRosa {
+    grid-area: BUMR;
+}
+
+#batomUltraCremosoVinho {
+    grid-area: BUCV;
+}
+
+#batomUltraCremosoNude {
+    grid-area: BUCN;
+}
+
+
+
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:    "A B C";
+    background-color: #C6AA97;
+
+    margin-top: 75px;
+    padding: 10px;
+}
+
+footer > #email {
+    grid-area: A;
+
+    text-align: start;
+}
+
+footer > #email > h3 {
+    font-family: "Noto Serif Display", serif;
+    font-size: 25px;
+
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+footer > #email > input {
+    width: 300px;
+    height: 25px;
+    background-color: #c4c4c4;
+    border-radius: 10px;
+
+    margin-left: 25px;
+    
+}
+
+
+footer > #email > button {
+    width: 100px;
+    height: 25px;
+    background-color: #c4c4c4;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+footer > #info {
+    grid-area: B;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:    "phone email"
+                            "place politica";
+}
+
+footer > #info > #phone {
+    grid-area: phone;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+}
+
+footer > #info > #email {
+    grid-area: email;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+}
+
+footer > #info > #local {
+    grid-area: place;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+
+}
+
+footer > #info > #politica {
+    grid-area: politica;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+
+}
+
+footer > #socialMedia {
+    grid-area: C;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:    "a b"
+                            "c d"
+                            "e f";
+
+}
+
+footer > #socialMedia > #youtube {
+    text-align: start;
+    grid-area: a;
+}
+
+footer > #socialMedia > #whatsapp {
+    text-align: start;
+    grid-area: b;
+    
+}
+
+footer > #socialMedia > #facebook {
+    text-align: start;
+    grid-area: c;
+    
+}
+
+footer > #socialMedia > #instagram {
+    text-align: start;
+    grid-area: d;
+    
+}
+
+footer > #socialMedia > #twitter {
+    text-align: start;
+    grid-area: e;
+    
+}
+
+footer > #socialMedia > #pinterest {
+    text-align: start;
+    grid-area: f;
+    
 }
