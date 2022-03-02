@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300;500&display=swap');
+
+body {
+    background-color: #B17575;
+    text-align: center;
+}
+
+#container {
+    width: 100%;
+    text-align: center;
+
+    background-color: #B17575;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+
+    text-align: center;
+    padding-top: 2%;
+    background-color: #E8CCB7;
+
+    margin-bottom: 15px;
+}
+
+header > h1 {
+    font-size: 60px;
+
+    background-image: linear-gradient(to bottom, #AC3333 , #AC3333, #AC333300);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#productsContainer {
+    width: 90%;
+    height: 150vh;
+
+    margin: auto;
+    background-color: #E8CCB7;
+}
+
+#productsContainer > h2 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #AC3333;
+    font-family: 'Noto Serif Display', serif;
+}
