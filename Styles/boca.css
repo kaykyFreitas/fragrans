@@ -30,13 +30,45 @@ header {
     margin-bottom: 15px;
 }
 
-header > h1 {
+header > a {
+    position: absolute;
+    z-index: 1;
+
+    top: 10px;
+    left:10px;
+
+    font-size: 20px;
+    font-family: 'Noto Serif Display', serif;
+
+    background-image: linear-gradient(to bottom, #A06C68, #A06C68, #00000000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    
+    text-decoration: none;
+
+}
+
+header > #boca {
     font-size: 60px;
 
     background-image: linear-gradient(to bottom, #AC3333 , #AC3333, #AC333300);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+header > img {
+    position: absolute;
+    z-index: 2;
+
+    width: 10%;
+    height: 15%;
+
+    top: 3%;
+    left: 58%;
+
 }
 
 #productsContainer {
@@ -47,6 +79,8 @@ header > h1 {
 
     margin: auto;
     background-color: #E8CCB7;
+
+    border-radius: 10px;
 }
 
 #productsContainer > h2 {
