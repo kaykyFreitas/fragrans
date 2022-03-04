@@ -10,39 +10,88 @@
 
 /* Container */
 #container {
-    background-color: #F2E7DC;
+    background-color: #B17575;
     text-align: center;
     width: 100%;
     height: 100%;
 }
 
 /* Header */
-header {
+header > nav{
     width: 100%;
-    height: 15%;
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+
+    background-color: #2e2e2e;
 }
 
-header > img {
+header > nav > #logo {
+    margin-top: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 18px;
+
+    background-image: linear-gradient(to bottom, #A06C68, #A06C68, #00000000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header > nav > #menu {
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+header > nav > #menu > a {
+    text-decoration: none;
+    font-family: 'Roboto' sans-serif;
+    font-size: 20px;
+    color: #FFFAFA;
+    margin-left: 10px;
+}
+
+header > nav > #menu > #home {
+    color: #c4c4c4;
+} 
+
+
+
+
+
+
+
+
+
+
+
+header > #banner {
+    width: 100%;
+    height: 410px;
+
+    background-image: url(Assets/homeImage.png);
+    background-size: cover;
+
+    padding-top: 80px;
+}
+
+header > #banner > img {
     width: 100%;
     height: 50vh;
 }
 
-header h1 {
-    position: absolute;
-    z-index: 1;
-
-    font-size: 100px;
+header > #banner > h1 {
+    font-size: clamp(100px, 50%, 80px);
     font-family: 'Noto Serif Display', serif;
 
     background-image: linear-gradient(to bottom, #A06C68, #A06C68, #00000000);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-
-    top: 5%;
-    left: 25%;
 }
+
 
 /* Brands display */
 #brands {
@@ -53,10 +102,23 @@ header h1 {
     margin-left: 15px;
 }
 
+#brands > a > .lightBrandLogo {
+    border: 2px solid #2e2e2e;
+}
+
+#brands > a > .darkBrandLogo {
+    border: 2px solid #FFFAFA;
+}
+
 #brands > a > img {
     width: 10%;
     height: 10%;
-    border: 3px solid #FFFAFA;
+
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 044, 1);    
+}
+
+#brands > a > img:hover {
+    transform: scale(1.1, 1.1);
 }
 
 /* Segments */
@@ -72,7 +134,7 @@ header h1 {
 }
 
 #segments > #segmentImages {
-    background-color: #BB998E;
+    background-color: #2e2e2e;
     padding-top: 10px;
     width: 77%;
 
@@ -83,7 +145,14 @@ header h1 {
 #segments > #segmentImages > a {
     margin: auto;
     text-decoration: none;
+    
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 044, 1);
 }
+
+#segments > #segmentImages > a:hover {
+    transform: scale(1.1, 1.1);
+}
+
 
 #segments > #segmentImages > a > #boca {
     width: 24vw;
@@ -95,6 +164,9 @@ header h1 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
 
 #segments > #segmentImages > a > #rosto {
     width: 24vw;
@@ -286,7 +358,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:    "A B C";
-    background-color: #0D0D0D;
+    background-color: #2e2e2e;
 
     margin-top: 75px;
     padding: 10px;
