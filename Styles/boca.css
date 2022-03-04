@@ -6,9 +6,10 @@
 
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 body {
-    background-color: #B17575;
+    background-color: #FFFAFA;
     text-align: center;
 }
 
@@ -16,27 +17,61 @@ body {
     width: 100%;
     text-align: center;
 
-    background-color: #B17575;
+    background-color: #c4c4c4;
 }
 
 header {
     width: 100%;
-    height: 15vh;
+    height: 10vh;
 
-    text-align: center;
-    padding-top: 2%;
-    background-color: #E8CCB7;
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+
+    background-color: #0D0D0D;
 
     margin-bottom: 15px;
 }
 
-header > a {
-    position: absolute;
-    z-index: 1;
+header > #logo {
+    margin-top: 15px;
+    margin-left: 15px;
+    text-decoration: none;
 
-    top: 10px;
-    left:10px;
+    background-image: linear-gradient(to bottom, #A06C68, #A06C68, #00000000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+header > #boca {
+    margin-top: 15px;
+
+    background-image: linear-gradient(to bottom, #AC3333 , #AC3333, #AC333300);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header > #menu {
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+header > #menu > a {
+    text-decoration: none;
+    font-family: 'Roboto' sans-serif;
+    font-size: 20px;
+    color: #FFFAFA;
+    margin-left: 10px;
+}
+
+header > #menu > #boca {
+    color: #c4c4c4;
+} 
+
+/*header > a {
+    text-align: left;
     font-size: 20px;
     font-family: 'Noto Serif Display', serif;
 
@@ -44,6 +79,7 @@ header > a {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: #0D0D0D;
 
     
     text-decoration: none;
@@ -51,6 +87,7 @@ header > a {
 }
 
 header > #boca {
+    text-align: center;
     font-size: 60px;
 
     background-image: linear-gradient(to bottom, #AC3333 , #AC3333, #AC333300);
@@ -59,7 +96,18 @@ header > #boca {
     -webkit-text-fill-color: transparent;
 }
 
-header > img {
+header > div {
+    text-align: right;
+}
+
+header > div > a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #0D0D0D;
+    margin-top: 5px;
+}*/
+
+/*header > img {
     position: absolute;
     z-index: 2;
 
@@ -69,18 +117,18 @@ header > img {
     top: 3%;
     left: 58%;
 
-}
+}*/
 
 #productsContainer {
-    width: 90%;
+    width: 95%;
     height: 100%;
 
     padding: 10px;
 
     margin: auto;
-    background-color: #E8CCB7;
+    background-color: #FFFAFA;;
 
-    border-radius: 10px;
+    border-radius: 2.5px;
 }
 
 #productsContainer > h2 {
@@ -88,14 +136,15 @@ header > img {
     margin-bottom: 25px;
     font-size: 40px;
     font-weight: 300;
-    color: #AC3333;
-    font-family: 'Noto Serif Display', serif;
+    color: #0D0D0D;
+    font-weight: Medium;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 
 .container{
-    background-color: #E8CCB7;
+    background-color: #FFFAFA;
     width: 100%;
     height: 100%;
 
@@ -105,23 +154,38 @@ header > img {
     grid-template-columns: 250px 250px 250px 250px;
     grid-template-rows: 300px 300px 300px 300px 300px;
 
-    grid-gap: 10px;
+    grid-gap: 30px;
     justify-content:center;
 
 }
 
 .container > div {
     background: #fff;
-    border: 5px solid #B17575;
-    border-radius: 10px;
+    /*border: 1px solid #c4c4c4;*/
+    border-radius: 2.5px;
 
+    padding: 10px;
+    box-shadow: 2.5px 1.75px 1.75px #c4c4c4;
+
+}
+
+.container > div > h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.container > div > h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    text-align: left;
 }
 
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:    "A B C";
-    background-color: #C6AA97;
+    background-color: #0D0D0D;
 
     margin-top: 75px;
     padding: 10px;
@@ -136,6 +200,7 @@ footer > #email {
 footer > #email > h3 {
     font-family: "Noto Serif Display", serif;
     font-size: 25px;
+    color: #FFFAFA;
 
     margin-left: 25px;
     margin-top: 10px;
@@ -145,7 +210,7 @@ footer > #email > h3 {
 footer > #email > input {
     width: 300px;
     height: 25px;
-    background-color: #c4c4c4;
+    background-color: #FFFAFA;
     border-radius: 10px;
 
     margin-left: 25px;
@@ -156,7 +221,7 @@ footer > #email > input {
 footer > #email > button {
     width: 100px;
     height: 25px;
-    background-color: #c4c4c4;
+    background-color: #FFFAFA;
     border-radius: 10px;
 
     cursor: pointer;
@@ -176,6 +241,7 @@ footer > #info > #phone {
     grid-area: phone;
     margin-top: 3px;
     margin-bottom: 3px;
+    color: #FFFAFA;
 
 }
 
@@ -183,6 +249,7 @@ footer > #info > #email {
     grid-area: email;
     margin-top: 3px;
     margin-bottom: 3px;
+    color: #FFFAFA;
 
 }
 
@@ -190,7 +257,7 @@ footer > #info > #local {
     grid-area: place;
     margin-top: 3px;
     margin-bottom: 3px;
-
+    color: #FFFAFA;
 
 }
 
@@ -198,6 +265,7 @@ footer > #info > #politica {
     grid-area: politica;
     margin-top: 3px;
     margin-bottom: 3px;
+    color: #FFFAFA;
 
 
 }
@@ -217,34 +285,42 @@ footer > #socialMedia {
 footer > #socialMedia > #youtube {
     text-align: start;
     grid-area: a;
+    color: #FFFAFA;
 }
 
 footer > #socialMedia > #whatsapp {
     text-align: start;
     grid-area: b;
-    
+    color: #FFFAFA;
+
 }
 
 footer > #socialMedia > #facebook {
     text-align: start;
     grid-area: c;
+    color: #FFFAFA;
     
 }
 
 footer > #socialMedia > #instagram {
     text-align: start;
     grid-area: d;
+    color: #FFFAFA;
+
     
 }
 
 footer > #socialMedia > #twitter {
     text-align: start;
     grid-area: e;
+    color: #FFFAFA;
     
 }
 
 footer > #socialMedia > #pinterest {
     text-align: start;
     grid-area: f;
+    color: #FFFAFA;
+
     
 }
