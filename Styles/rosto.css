@@ -46,7 +46,7 @@ header > #logo {
 header > #rosto {
     margin-top: 15px;
 
-    background-image: linear-gradient(to bottom, #FEE9E9 , #FEE9E9, #C4c4c4);
+    background-image: linear-gradient(to bottom, #FFFAFA , #FFFAFA, #c4c4c4);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

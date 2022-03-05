@@ -46,7 +46,7 @@ header > #logo {
 header > #boca {
     margin-top: 15px;
 
-    background-image: linear-gradient(to bottom, #AC3333 , #AC3333, #AC333300);
+    background-image: linear-gradient(to bottom, #FFFAFA , #FFFAFA, #c4c4c4);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -65,7 +65,7 @@ header > #menu > a {
     margin-left: 10px;
 }
 
-header > #menu > #boca {
+header > #menu > #olhos {
     color: #c4c4c4;
 } 
 
@@ -136,7 +136,7 @@ header > div > a {
     height: 249px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(Assets/mouthImages/bannerBoca.jpg);
+    background-image: url(Assets/eyeImages/bannerOlhos.jpg);
     padding-top: 85px;
 
     margin-bottom: 50px;
