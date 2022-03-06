@@ -93,21 +93,14 @@ header > #menu > #boca {
     margin-bottom: 50px;
 }
 
-#productsContainer > #banner > h2 {
-    margin-top: 15px;
-    font-family: 'Roboto' sans-serif;
-    font-size: 50px;
-    font-weight: bolder;
-    color: #FFFAFA;
-}
 
-#productsContainer > div > h2 {
+#productsContainer > #banner > h2 {
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: 40px;
     font-weight: 300;
-    color: #0D0D0D;
-    font-weight: Medium;
+    color: #FFFAFA;
+    font-weight: bolder;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -206,7 +199,7 @@ footer > #email > h3 {
     margin-bottom: 20px;
 }
 
-footer > #email > input {
+footer > #email > .newsletter > input {
     width: 300px;
     height: 25px;
     background-color: #FFFAFA;
@@ -217,7 +210,7 @@ footer > #email > input {
 }
 
 
-footer > #email > button {
+footer > #email > .newsletter > button {
     width: 100px;
     height: 25px;
     background-color: #FFFAFA;
@@ -322,4 +315,122 @@ footer > #socialMedia > #pinterest {
     color: #FFFAFA;
 
     
+}
+
+/* Media queries */
+@media (max-width: 630px) {
+
+    header > #logo {
+        margin-top: 8px;
+        margin-left: 10px;
+        text-decoration: none;
+        font-size: 15px;
+    
+        background-image: linear-gradient(to bottom, #A06C68, #A06C68, #00000000);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    header > #boca {
+        display: none;
+    }
+
+    header > #menu > #home {
+        display: none;
+    }
+
+
+    #productsContainer > #banner {
+        width: 100%;
+        height: 140px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        background-image: url(Assets/mouthImages/smallBannerBoca.jpg);
+        padding-top: 20px;
+    
+        margin-bottom: 50px;
+    }
+    
+    
+    #productsContainer > #banner > h2 {
+        font-size: 25px;
+        font-weight: 300;
+        color: #FFFAFA;
+        font-weight: bolder;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    .container{
+        background-color: #FFFAFA;
+        width: 100%;
+        height: 650vh;
+        padding: 10px;
+    
+        margin-bottom: 5px;
+    
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
+    
+        grid-gap: 40px;
+        justify-content:center;
+    }
+
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:    "A"
+                                "B"
+                                "C";
+
+        grid-gap: 20px;
+        background-color: #2e2e2e;
+    
+        margin-top: 75px;
+        padding: 10px;
+    }
+
+    footer > #email {
+        grid-area: A;
+    
+        text-align: center;
+    }
+
+    footer > #email > h3 {
+        font-family: "Noto Serif Display", serif;
+        font-size: 18px;
+        color: #FFFAFA;
+    
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    footer > #email > .newsletter {
+        display: flex;
+        text-align: center;
+    }
+
+    footer > #email > .newsletter > input {
+        width: 65%;
+        height: 25px;
+        background-color: #FFFAFA;
+        border-radius: 10px;
+        margin-right: 10px;
+    
+    }
+    
+    footer > #email > .newsletter > button {
+        width: 25%;
+        height: 25px;
+        background-color: #FFFAFA;
+        border-radius: 10px;
+
+    
+        cursor: pointer;
+    }
 }
