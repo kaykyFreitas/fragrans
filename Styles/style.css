@@ -59,14 +59,6 @@ header > nav > #menu > #home {
 
 
 
-
-
-
-
-
-
-
-
 header > #banner {
     width: 100%;
     height: 410px;
@@ -222,138 +214,6 @@ header > #banner > h1 {
     -webkit-text-fill-color: transparent;
 }
 
-/*footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:    "A B C";
-    background-color: #C6AA97;
-
-    margin-top: 75px;
-    padding: 10px;
-}
-
-footer > #email {
-    grid-area: A;
-
-    text-align: start;
-}
-
-footer > #email > h3 {
-    font-family: "Noto Serif Display", serif;
-    font-size: 25px;
-
-    margin-left: 25px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-footer > #email > input {
-    width: 300px;
-    height: 25px;
-    background-color: #c4c4c4;
-    border-radius: 10px;
-
-    margin-left: 25px;
-    
-}
-
-
-footer > #email > button {
-    width: 100px;
-    height: 25px;
-    background-color: #c4c4c4;
-    border-radius: 10px;
-
-    cursor: pointer;
-}
-
-footer > #info {
-    grid-area: B;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:    "phone email"
-                            "place politica";
-}
-
-footer > #info > #phone {
-    grid-area: phone;
-    margin-top: 3px;
-    margin-bottom: 3px;
-
-}
-
-footer > #info > #email {
-    grid-area: email;
-    margin-top: 3px;
-    margin-bottom: 3px;
-
-}
-
-footer > #info > #local {
-    grid-area: place;
-    margin-top: 3px;
-    margin-bottom: 3px;
-
-
-}
-
-footer > #info > #politica {
-    grid-area: politica;
-    margin-top: 3px;
-    margin-bottom: 3px;
-
-
-}
-
-footer > #socialMedia {
-    grid-area: C;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:    "a b"
-                            "c d"
-                            "e f";
-
-}
-
-footer > #socialMedia > #youtube {
-    text-align: start;
-    grid-area: a;
-}
-
-footer > #socialMedia > #whatsapp {
-    text-align: start;
-    grid-area: b;
-    
-}
-
-footer > #socialMedia > #facebook {
-    text-align: start;
-    grid-area: c;
-    
-}
-
-footer > #socialMedia > #instagram {
-    text-align: start;
-    grid-area: d;
-    
-}
-
-footer > #socialMedia > #twitter {
-    text-align: start;
-    grid-area: e;
-    
-}
-
-footer > #socialMedia > #pinterest {
-    text-align: start;
-    grid-area: f;
-    
-}*/
-
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -496,4 +356,132 @@ footer > #socialMedia > #pinterest {
     color: #FFFAFA;
 
     
+}
+
+/* Media queries */
+@media (max-width: 630px) {
+
+    header > nav{
+        width: 100%;
+        height: 10vh;
+    
+        display: flex;
+        justify-content: space-between;
+        padding: auto;
+    
+        background-color: #2e2e2e;
+    }
+    
+    header > nav > #logo {
+        margin-top: 15px;
+        margin-left: 15px;
+        text-decoration: none;
+        font-size: 18px;
+    
+        background-image: linear-gradient(to bottom, #A06C68, #A06C68, #00000000);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    header > nav > #menu {
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+    
+    header > nav > #menu > a {
+        text-decoration: none;
+        font-family: 'Roboto' sans-serif;
+        font-size: 20px;
+        color: #FFFAFA;
+        margin-left: 10px;
+    }
+    
+    header > nav > #menu > #home {
+        color: #c4c4c4;
+    } 
+    
+    
+    
+    header > #banner {
+        width: 100%;
+        height: 410px;
+    
+        background-image: url(Assets/homeImage.png);
+        background-size: cover;
+    
+        padding-top: 80px;
+    }
+    
+    header > #banner > img {
+        width: 100%;
+        height: 50vh;
+    }
+    
+    header > #banner > h1 {
+        font-size: clamp(100px, 50%, 80px);
+        font-family: 'Noto Serif Display', serif;
+    
+        background-image: linear-gradient(to bottom, #A06C68, #A06C68, #00000000);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:    "A"
+                                "B"
+                                "C";
+
+        grid-gap: 20px;
+        background-color: #2e2e2e;
+
+        font-size: 8;
+    
+        margin-top: 75px;
+        padding: 10px;
+    }
+
+    footer > #email {
+        grid-area: A;
+    
+        text-align: center;
+    }
+
+    footer > #email > h3 {
+        font-family: "Noto Serif Display", serif;
+        font-size: 18px;
+        color: #FFFAFA;
+    
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    footer > #email > .newsletter {
+        display: flex;
+        text-align: center;
+    }
+
+    footer > #email > .newsletter > input {
+        width: 65%;
+        height: 25px;
+        background-color: #FFFAFA;
+        border-radius: 10px;
+        margin-right: 10px;
+    
+    }
+    
+    footer > #email > .newsletter > button {
+        width: 25%;
+        height: 25px;
+        background-color: #FFFAFA;
+        border-radius: 10px;
+
+    
+        cursor: pointer;
+    }
 }

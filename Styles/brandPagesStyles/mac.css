@@ -43,7 +43,7 @@ header > #logo {
     -webkit-text-fill-color: transparent;
 }
 
-header > #boca {
+header > #mac {
     margin-top: 15px;
 
     background-image: linear-gradient(to bottom, #FFFAFA , #FFFAFA, #c4c4c4);
@@ -202,7 +202,7 @@ footer > #email > h3 {
     margin-bottom: 20px;
 }
 
-footer > #email > input {
+footer > #email > .newsletter > input {
     width: 300px;
     height: 25px;
     background-color: #FFFAFA;
@@ -213,7 +213,7 @@ footer > #email > input {
 }
 
 
-footer > #email > button {
+footer > #email > .newsletter > button {
     width: 100px;
     height: 25px;
     background-color: #FFFAFA;
@@ -318,4 +318,143 @@ footer > #socialMedia > #pinterest {
     color: #FFFAFA;
 
     
+}
+
+/* Media queries */
+@media (max-width: 630px) {
+
+    header {
+        width: 100%;
+        height: 8vh;
+    
+        display: flex;
+        justify-content: space-between;
+        padding: auto;
+    
+        background-color: #2e2e2e;
+    }
+
+    header > #logo {
+        margin-top: 8px;
+        margin-left: 10px;
+        text-decoration: none;
+        font-size: 14px;
+    
+        background-image: linear-gradient(to bottom, #A06C68, #A06C68, #00000000);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    header > #mac {
+        display: none;
+    }
+
+    header > #menu > a {
+        text-decoration: none;
+        font-family: 'Roboto' sans-serif;
+        font-size: 22px;
+        color: #FFFAFA;
+        margin-left: 10px;
+    }
+
+    header > #menu > #home {
+        display: none;
+    }
+
+
+    #productsContainer > #banner {
+        width: 100%;
+        height: 140px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        background-image: url(Assets/mouthImages/smallBannerBoca.jpg);
+        padding-top: 20px;
+    
+        margin-bottom: 50px;
+    }
+    
+    
+    #productsContainer > #banner > h2 {
+        font-size: 25px;
+        font-weight: 300;
+        color: #FFFAFA;
+        font-weight: bolder;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    .container{
+        background-color: #FFFAFA;
+        width: 100%;
+        height: 325vh;
+        padding: 10px;
+    
+        margin-bottom: 5px;
+    
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 18% 18% 18% 18% 18%;
+    
+        grid-gap: 40px;
+        justify-content:center;
+    }
+
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:    "A"
+                                "B"
+                                "C";
+
+        grid-gap: 20px;
+        background-color: #2e2e2e;
+
+        font-size: 8;
+    
+        margin-top: 75px;
+        padding: 10px;
+    }
+
+    footer > #email {
+        grid-area: A;
+    
+        text-align: center;
+    }
+
+    footer > #email > h3 {
+        font-family: "Noto Serif Display", serif;
+        font-size: 18px;
+        color: #FFFAFA;
+    
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    footer > #email > .newsletter {
+        display: flex;
+        text-align: center;
+    }
+
+    footer > #email > .newsletter > input {
+        width: 65%;
+        height: 25px;
+        background-color: #FFFAFA;
+        border-radius: 10px;
+        margin-right: 10px;
+    
+    }
+    
+    footer > #email > .newsletter > button {
+        width: 25%;
+        height: 25px;
+        background-color: #FFFAFA;
+        border-radius: 10px;
+
+    
+        cursor: pointer;
+    }
 }
