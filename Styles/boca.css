@@ -189,7 +189,7 @@ footer > #email {
     text-align: start;
 }
 
-footer > #email > .newsletter > h3 {
+footer > #email > h3 {
     font-family: "Noto Serif Display", serif;
     font-size: 25px;
     color: #FFFAFA;
