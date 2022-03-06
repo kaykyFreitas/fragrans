@@ -195,18 +195,48 @@ header > div > a {
     transform: scale(1.1, 1.1);
 }
 
+/*.container > div > .dezPorcento {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: right;
+    color: #2e2e2e;
+    background-color: blue;
+
+}*/
+
+
+.container > div > img {
+    margin: auto;
+    vertical-align: auto;
+}
 
 .container > div > h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
-    text-align: left;
+    text-align: center;
+    color: #2e2e2e;
+
 }
 
 .container > div > h2 {
+    margin-top: 25px;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
-    text-align: left;
+    text-align: center;
+    color: #2e2e2e;
+
 }
+
+.container > div > h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #2e2e2e;
+    margin-top: 2%;
+}
+
+
 
 footer {
     display: grid;
