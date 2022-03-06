@@ -32,7 +32,7 @@ header {
 }
 
 header > #logo {
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: 15px;
     text-decoration: none;
     font-size: 18px;
@@ -69,55 +69,6 @@ header > #menu > #rosto {
     color: #c4c4c4;
 } 
 
-
-/*header > a {
-    text-align: left;
-    font-size: 20px;
-    font-family: 'Noto Serif Display', serif;
-
-    background-image: linear-gradient(to bottom, #A06C68, #A06C68, #00000000);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #0D0D0D;
-
-    
-    text-decoration: none;
-
-}
-
-header > #boca {
-    text-align: center;
-    font-size: 60px;
-
-    background-image: linear-gradient(to bottom, #AC3333 , #AC3333, #AC333300);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-header > div {
-    text-align: right;
-}
-
-header > div > a {
-    text-decoration: none;
-    font-size: 25px;
-    color: #0D0D0D;
-    margin-top: 5px;
-}*/
-
-/*header > img {
-    position: absolute;
-    z-index: 2;
-
-    width: 10%;
-    height: 15%;
-
-    top: 3%;
-    left: 58%;
-
-}*/
 
 #productsContainer {
     width: 95%;
@@ -195,16 +146,6 @@ header > div > a {
     transform: scale(1.1, 1.1);
 }
 
-/*.container > div > .dezPorcento {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: bolder;
-    text-align: right;
-    color: #2e2e2e;
-    background-color: blue;
-
-}*/
-
 
 .container > div > img {
     margin: auto;
@@ -236,6 +177,9 @@ header > div > a {
     margin-top: 2%;
 }
 
+.container > div > h4 > span {
+    text-decoration: line-through;
+}
 
 
 footer {

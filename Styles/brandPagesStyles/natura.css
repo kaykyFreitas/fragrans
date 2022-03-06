@@ -65,9 +65,6 @@ header > #menu > a {
     margin-left: 10px;
 }
 
-header > #menu > #olhos {
-    color: #c4c4c4;
-} 
 
 #productsContainer {
     width: 95%;
@@ -86,7 +83,7 @@ header > #menu > #olhos {
     height: 249px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(Assets/eyeImages/bannerOlhos.jpg);
+    background-image: url(../Assets/brandsBanner/naturaBanner.jpg);
     padding-top: 85px;
 
     margin-bottom: 50px;
@@ -150,12 +147,12 @@ header > #menu > #olhos {
     vertical-align: auto;
 }
 
+
 .container > div > h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     text-align: center;
     color: #2e2e2e;
-
 }
 
 .container > div > h2 {
@@ -164,6 +161,7 @@ header > #menu > #olhos {
     font-weight: lighter;
     text-align: center;
     color: #2e2e2e;
+
 }
 
 .container > div > h4 {
