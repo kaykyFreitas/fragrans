@@ -42,3 +42,11 @@ header > nav > #menu > #menuSecoes > a:hover{
     color: #c4c4c4;
 } 
 
+header > nav #menu > a > img {
+    width: 48px;
+    height: 48px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}

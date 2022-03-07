@@ -1,6 +1,6 @@
-@import url(../generalStyles/header.css);
-@import url(../generalStyles/brandPageGrid.css);
-@import url(../generalStyles/footer.css);
+@import url(generalStyles/header.css);
+@import url(generalStyles/brandPageGrid.css);
+@import url(generalStyles/footer.css);
 
 * {
     margin: 0;
@@ -24,7 +24,7 @@ body {
     background-color: #c4c4c4;
 }
 
-header > nav > #mayBelline {
+header > nav > #sacola {
     margin-top: 5px;
     font-size: 50px;
 
@@ -47,27 +47,82 @@ header > nav > #mayBelline {
     border-radius: 2.5px;
 }
 
-#productsContainer > #banner {
+.paymentArea {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 90%;
+    grid-template-areas:    "a a"
+                            "b c";
+
     width: 100%;
-    height: 249px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../../Assets/brandsBanner/maybellinebanner.jpg);
-    padding-top: 85px;
-
-    margin-bottom: 50px;
+    height: 250px;
+    margin-bottom: 30px;
+    background-color: #2e2e2e;
+    color: #FFFAFA;
+    padding-bottom: 30px;
+    border-radius: 2.5px;
+    box-shadow: 2.5px 1.75px 1.75px #c4c4c4;
 }
 
+#productsContainer > .paymentArea > h1{
+    grid-area: a;
+    text-align: center;
+    font-size: 42px;
+    font-family: 'Roboto' sans-serif;
+    margin-bottom: 30px;
 
-#productsContainer > div > h2 {
+}
+
+#productsContainer > .paymentArea > .paymentInfo {
+    grid-area: c;
+    text-align: right;
     margin-top: 25px;
-    margin-bottom: 25px;
-    font-size: 40px;
-    font-weight: 300;
-    color: #0D0D0D;
-    font-weight: Medium;
-    font-family: 'Roboto', sans-serif;
 }
+
+#productsContainer > .paymentArea > .paymentInfo > h1 {
+    margin-right: 30px;
+    font-size: 32px;
+    font-family: 'Roboto' sans-serif;
+}
+
+#productsContainer > .paymentArea > .paymentInfo > h2 {
+    margin-right: 30px;
+    font-size: 20px;
+    font-family: 'Roboto' sans-serif;
+}
+
+#productsContainer > .paymentArea > .paymentInfo > button {
+    margin-right: 30px;
+    width: 225px;
+    height: 30px;
+    margin-top: 110px;
+    border-radius: 5px;
+    background-color: #FFFAFA;
+    color: #2e2e2e;
+    font-size: 20px;
+    font-family: 'Roboto' sans-serif;
+    font-weight: bolder;
+}
+#productsContainer > .paymentArea > .paymentProducts {
+    grid-area: b;
+    text-align: left;
+    margin-top: 25px;
+}
+
+#productsContainer > .paymentArea > .paymentProducts > h1 {
+    font-size: 32px;
+    font-family: 'Roboto' sans-serif;
+    margin-left: 30px;
+}
+
+#productsContainer > .paymentArea > .paymentProducts > ul {
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: 'Roboto' sans-serif;
+    list-style: none;
+}
+
+
 
 /* Media queries */
 @media (max-width: 630px) {
@@ -95,14 +150,14 @@ header > nav > #mayBelline {
         -webkit-text-fill-color: transparent;
     }
 
-    header > #mayBelline {
+    header > #rosto {
         display: none;
     }
 
     header > #menu > a {
         text-decoration: none;
         font-family: 'Roboto' sans-serif;
-        font-size: 22px;
+        font-size: 14px;
         color: #FFFAFA;
         margin-left: 10px;
     }
@@ -118,7 +173,7 @@ header > nav > #mayBelline {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right;
-        background-image: url(Assets/mouthImages/smallBannerBoca.jpg);
+        background-image: url(../Assets/mouthImages/smallBannerBoca.jpg);
         padding-top: 20px;
     
         margin-bottom: 50px;
@@ -137,17 +192,17 @@ header > nav > #mayBelline {
     .container{
         background-color: #FFFAFA;
         width: 100%;
-        height: 390vh;
+        height: 650vh;
         padding: 10px;
     
         margin-bottom: 5px;
     
         display: grid;
         grid-template-columns: 40% 40%;
-        grid-template-rows: 15% 15% 15% 15% 15% 15%;
+        grid-template-rows: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
     
         grid-gap: 40px;
-        justify-content:center;;
+        justify-content:center;
     }
 
 

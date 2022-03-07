@@ -24,6 +24,15 @@ body {
     background-color: #c4c4c4;
 }
 
+header > nav > #boca {
+    margin-top: 5px;
+    font-size: 50px;
+
+    background-image: linear-gradient(to bottom, #FFFAFA , #FFFAFA, #c4c4c4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 #productsContainer {

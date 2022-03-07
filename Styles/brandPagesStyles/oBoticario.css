@@ -53,7 +53,7 @@ header > nav > #oBoticario {
     height: 249px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../Assets/mouthImages/banneroboticario.jpg);
+    background-image: url(../../Assets/brandsBanner/banneroboticario.jpg);
     padding-top: 85px;
     margin-bottom: 50px;
 }
