@@ -181,6 +181,22 @@ header > #menu > #rosto {
     text-decoration: line-through;
 }
 
+.container > div > button {
+    width: 85%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+
+    box-shadow: 2.5px 1.75px 1.75px #c4c4c4;
+
+    margin-top: 15px;
+
+   font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 20px;
+    color: #FFFAFA;
+}
+
 
 footer {
     display: grid;
