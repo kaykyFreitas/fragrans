@@ -1,3 +1,7 @@
+@import url(../generalStyles/header.css);
+@import url(../generalStyles/brandPageGrid.css);
+@import url(../generalStyles/footer.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -16,65 +20,24 @@ body {
 #container {
     width: 100%;
     text-align: center;
-
     background-color: #c4c4c4;
 }
 
-header {
-    width: 100%;
-    height: 10vh;
-
-    display: flex;
-    justify-content: space-between;
-    padding: auto;
-
-    background-color: #2e2e2e;
-}
-
-header > #logo {
-    margin-top: 10px;
-    margin-left: 15px;
-    text-decoration: none;
-    font-size: 18px;
-
-    background-image: linear-gradient(to bottom, #A06C68, #A06C68, #00000000);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-header > #avon {
-    margin-top: 15px;
-
+header > nav > #avon {
+    margin-top: 5px;
+    font-size: 50px;
     background-image: linear-gradient(to bottom, #FFFAFA , #FFFAFA, #c4c4c4);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-header > #menu {
-    margin-top: 15px;
-    margin-right: 15px;
-}
-
-header > #menu > a {
-    text-decoration: none;
-    font-family: 'Roboto' sans-serif;
-    font-size: 20px;
-    color: #FFFAFA;
-    margin-left: 10px;
-}
-
-
 #productsContainer {
     width: 95%;
     height: 100%;
-
     padding: 10px;
-
     margin: auto;
     background-color: #FFFAFA;
-
     border-radius: 2.5px;
 }
 
@@ -85,7 +48,6 @@ header > #menu > a {
     background-size: cover;
     background-image: url(../../Assets/brandsBanner/avonBanner.jpg);
     padding-top: 85px;
-
     margin-bottom: 50px;
 }
 
@@ -107,277 +69,15 @@ header > #menu > a {
     font-family: 'Roboto', sans-serif;
 }
 
-
-
-.container{
-    background-color: #FFFAFA;
-    width: 100%;
-    height: 195vh;
-    padding: 10px;
-
-    margin-bottom: 5px;
-
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    grid-template-rows: 30% 30% 30%;
-
-    grid-gap: 40px;
-    justify-content:center;
-
-}
-
-.container > div {
-    background: #fff;
-    border-radius: 2.5px;
-
-    padding: 10px;
-    box-shadow: 2.5px 1.75px 1.75px #c4c4c4;
-    cursor: pointer;
-
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 044, 1);
-
-}
-
-.container > div:hover {
-    transform: scale(1.1, 1.1);
-}
-
-.container > div > img {
-    margin: auto;
-    vertical-align: auto;
-}
-
-
-.container > div > h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
-    text-align: center;
-    color: #2e2e2e;
-}
-
-.container > div > h2 {
-    margin-top: 25px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
-    text-align: center;
-    color: #2e2e2e;
-
-}
-
-.container > div > h4 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: lighter;
-    color: #2e2e2e;
-    margin-top: 2%;
-}
-
-.container > div > h4 > span {
-    text-decoration: line-through;
-}
-
-.container > div > button {
-    width: 85%;
-    height: 30px;
-    border-radius: 5px;
-    background-color: #2e2e2e;
-
-    box-shadow: 2.5px 1.75px 1.75px #c4c4c4;
-
-    margin-top: 15px;
-
-   font-family: 'Courier New', Courier, monospace;
-    font-weight: normal;
-    font-size: 20px;
-    color: #FFFAFA;
-}
-
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:    "A B C";
-    background-color: #2e2e2e;
-
-    margin-top: 75px;
-    padding: 10px;
-}
-
-
-footer > #email {
-    grid-area: A;
-
-    text-align: start;
-}
-
-footer > #email > h3 {
-    font-family: "Noto Serif Display", serif;
-    font-size: 25px;
-    color: #FFFAFA;
-
-    margin-left: 25px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-footer > #email > .newsletter > input {
-    width: 300px;
-    height: 25px;
-    background-color: #FFFAFA;
-    border-radius: 10px;
-
-    margin-left: 25px;
-}
-
-footer > #email > .newsletter > input:hover {
-    width: 285px;
-    height: 25px;
-    background-color: #2e2e2e;
-    color: #FFFAFA;
-    border-radius: 10px;
-    padding-left: 15px;
-    transition: 0.5s all;
-
-    margin-left: 25px;
-}
-
-footer > #email > .newsletter > button {
-    width: 100px;
-    height: 25px;
-    background-color: #FFFAFA;
-    border-radius: 10px;
-
-
-    cursor: pointer;
-}
-
-footer > #email > .newsletter > button:hover {
-    width: 100px;
-    height: 25px;
-    background-color: #2e2e2e;
-    color: #FFFAFA;
-    border-radius: 10px;
-    transition: 0.5s all;
-
-    cursor: pointer;
-}
-
-footer > #info {
-    grid-area: B;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:    "phone email"
-                            "place politica";
-}
-
-footer > #info > a {
-    text-decoration: none;
-}
-
-footer > #info > #phone {
-    grid-area: phone;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    color: #FFFAFA;
-
-}
-
-footer > #info > #email {
-    grid-area: email;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    color: #FFFAFA;
-
-}
-
-footer > #info > #local {
-    grid-area: place;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    color: #FFFAFA;
-
-}
-
-footer > #info > #politica {
-    grid-area: politica;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    color: #FFFAFA;
-
-
-}
-
-footer > #socialMedia {
-    grid-area: C;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:    "a b"
-                            "c d"
-                            "e f";
-
-}
-
-footer > #socialMedia > a {
-    text-decoration: none;
-}
-
-footer > #socialMedia > #youtube {
-    text-align: start;
-    grid-area: a;
-    color: #FFFAFA;
-}
-
-footer > #socialMedia > #whatsapp {
-    text-align: start;
-    grid-area: b;
-    color: #FFFAFA;
-
-}
-
-footer > #socialMedia > #facebook {
-    text-align: start;
-    grid-area: c;
-    color: #FFFAFA;
-    
-}
-
-footer > #socialMedia > #instagram {
-    text-align: start;
-    grid-area: d;
-    color: #FFFAFA;
-
-    
-}
-
-footer > #socialMedia > #twitter {
-    text-align: start;
-    grid-area: e;
-    color: #FFFAFA;
-    
-}
-
-footer > #socialMedia > #pinterest {
-    text-align: start;
-    grid-area: f;
-    color: #FFFAFA;
-
-    
-}
-
 /* Media queries */
 @media (max-width: 630px) {
 
     header {
         width: 100%;
         height: 8vh;
-    
         display: flex;
         justify-content: space-between;
         padding: auto;
-    
         background-color: #2e2e2e;
     }
 
@@ -386,7 +86,6 @@ footer > #socialMedia > #pinterest {
         margin-left: 10px;
         text-decoration: none;
         font-size: 14px;
-    
         background-image: linear-gradient(to bottom, #A06C68, #A06C68, #00000000);
         background-clip: text;
         -webkit-background-clip: text;
@@ -409,7 +108,6 @@ footer > #socialMedia > #pinterest {
         display: none;
     }
 
-
     #productsContainer > #banner {
         width: 100%;
         height: 140px;
@@ -418,10 +116,8 @@ footer > #socialMedia > #pinterest {
         background-position: right;
         background-image: url(../../Assets/mouthImages/smallBannerBoca.jpg);
         padding-top: 20px;
-    
         margin-bottom: 50px;
     }
-    
     
     #productsContainer > #banner > h2 {
         font-size: 25px;
@@ -431,23 +127,18 @@ footer > #socialMedia > #pinterest {
         font-family: 'Roboto', sans-serif;
     }
 
-
     .container{
         background-color: #FFFAFA;
         width: 100%;
         height: 390vh;
         padding: 10px;
-    
         margin-bottom: 5px;
-    
         display: grid;
         grid-template-columns: 40% 40%;
         grid-template-rows: 15% 15% 15% 15% 15% 15%;
-    
         grid-gap: 40px;
         justify-content:center;
     }
-
 
     footer {
         display: grid;
@@ -456,19 +147,15 @@ footer > #socialMedia > #pinterest {
         grid-template-areas:    "A"
                                 "B"
                                 "C";
-
         grid-gap: 20px;
         background-color: #2e2e2e;
-
         font-size: 8;
-    
         margin-top: 75px;
         padding: 10px;
     }
 
     footer > #email {
         grid-area: A;
-    
         text-align: center;
     }
 
@@ -476,7 +163,6 @@ footer > #socialMedia > #pinterest {
         font-family: "Noto Serif Display", serif;
         font-size: 18px;
         color: #FFFAFA;
-    
         margin-top: 10px;
         margin-bottom: 20px;
     }
@@ -492,7 +178,6 @@ footer > #socialMedia > #pinterest {
         background-color: #FFFAFA;
         border-radius: 10px;
         margin-right: 10px;
-    
     }
     
     footer > #email > .newsletter > button {
@@ -500,8 +185,6 @@ footer > #socialMedia > #pinterest {
         height: 25px;
         background-color: #FFFAFA;
         border-radius: 10px;
-
-    
         cursor: pointer;
     }
 }
