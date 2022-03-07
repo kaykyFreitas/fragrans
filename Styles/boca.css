@@ -245,6 +245,10 @@ footer > #info {
                             "place politica";
 }
 
+footer > #info > a {
+    text-decoration: none;
+}
+
 footer > #info > #phone {
     grid-area: phone;
     margin-top: 3px;
@@ -288,6 +292,11 @@ footer > #socialMedia {
                             "c d"
                             "e f";
 
+}
+
+
+footer > #socialMedia > a {
+    text-decoration: none;
 }
 
 footer > #socialMedia > #youtube {

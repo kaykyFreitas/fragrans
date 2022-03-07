@@ -244,6 +244,10 @@ footer > #email > .newsletter > button {
     cursor: pointer;
 }
 
+footer > #info > a {
+    text-decoration: none;
+}
+
 footer > #info {
     grid-area: B;
 
@@ -297,6 +301,11 @@ footer > #socialMedia {
                             "c d"
                             "e f";
 
+}
+
+
+footer > #socialMedia > a {
+    text-decoration: none;
 }
 
 footer > #socialMedia > #youtube {
