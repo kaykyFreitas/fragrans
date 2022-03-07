@@ -225,15 +225,37 @@ footer > #email > .newsletter > input {
     border-radius: 10px;
 
     margin-left: 25px;
-    
 }
 
+footer > #email > .newsletter > input:hover {
+    width: 285px;
+    height: 25px;
+    background-color: #2e2e2e;
+    color: #FFFAFA;
+    border-radius: 10px;
+    padding-left: 15px;
+    transition: 0.5s all;
+
+    margin-left: 25px;
+}
 
 footer > #email > .newsletter > button {
     width: 100px;
     height: 25px;
     background-color: #FFFAFA;
     border-radius: 10px;
+
+
+    cursor: pointer;
+}
+
+footer > #email > .newsletter > button:hover {
+    width: 100px;
+    height: 25px;
+    background-color: #2e2e2e;
+    color: #FFFAFA;
+    border-radius: 10px;
+    transition: 0.5s all;
 
     cursor: pointer;
 }
