@@ -83,19 +83,19 @@ header > #menu > a {
     height: 249px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../Assets/mouthImages/bannerBoca.jpg);
+    background-image: url(../Assets/mouthImages/maybellinebanner.jpg);
     padding-top: 85px;
 
     margin-bottom: 50px;
 }
 
-#productsContainer > #banner > h2 {
+/*#productsContainer > #banner > h2 {
     margin-top: 15px;
     font-family: 'Roboto' sans-serif;
     font-size: 50px;
     font-weight: bolder;
     color: #FFFAFA;
-}
+}*/
 
 #productsContainer > div > h2 {
     margin-top: 25px;
