@@ -63,7 +63,7 @@ header > #banner {
     width: 100%;
     height: 410px;
 
-    background-image: url(Assets/homeImage.png);
+    background-image: url(../Assets/homeImage.png);
     background-size: cover;
 
     padding-top: 80px;
@@ -152,7 +152,7 @@ header > #banner > h1 {
 
     margin-bottom: 10px;
     padding-top: 78%;
-    background-image: url(Assets/Segments/lipImage.png);
+    background-image: url(../Assets/Segments/lipImage.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -166,7 +166,7 @@ header > #banner > h1 {
 
     margin-bottom: 10px;
     padding-top: 78%;
-    background-image: url(Assets/Segments/faceImage.png);
+    background-image: url(../Assets/Segments/faceImage.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -177,7 +177,7 @@ header > #banner > h1 {
 
     margin-bottom: 10px;
     padding-top: 78%;
-    background-image: url(Assets/Segments/eyeImage.png);
+    background-image: url(../Assets/Segments/eyeImage.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -240,7 +240,7 @@ footer > #email > h3 {
     margin-bottom: 20px;
 }
 
-footer > #email > input {
+footer > #email > .newsletter > input {
     width: 300px;
     height: 25px;
     background-color: #FFFAFA;
@@ -251,7 +251,7 @@ footer > #email > input {
 }
 
 
-footer > #email > button {
+footer > #email > .newsletter > button {
     width: 100px;
     height: 25px;
     background-color: #FFFAFA;
@@ -407,7 +407,7 @@ footer > #socialMedia > #pinterest {
         width: 100%;
         height: 410px;
     
-        background-image: url(Assets/homeImage.png);
+        background-image: url(../Assets/homeImage.png);
         background-size: cover;
     
         padding-top: 80px;

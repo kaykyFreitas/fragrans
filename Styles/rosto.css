@@ -87,7 +87,7 @@ header > #menu > #rosto {
     height: 249px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(Assets/faceImages/bannerRosto.jpg);
+    background-image: url(../Assets/faceImages/bannerRosto.jpg);
     padding-top: 85px;
 
     margin-bottom: 50px;
@@ -375,7 +375,7 @@ footer > #socialMedia > #pinterest {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right;
-        background-image: url(Assets/mouthImages/smallBannerBoca.jpg);
+        background-image: url(../Assets/mouthImages/smallBannerBoca.jpg);
         padding-top: 20px;
     
         margin-bottom: 50px;
