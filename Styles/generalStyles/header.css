@@ -1,6 +1,9 @@
+@import url(fonts.css);
+
+
 header > nav{
     width: 100%;
-    height: 10vh;
+    height: 65px;
 
     display: flex;
     justify-content: space-between;
@@ -10,16 +13,29 @@ header > nav{
 }
 
 header > nav > #logo {
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-top: 8px;
+    margin-left: 10px;
     text-decoration: none;
-    font-size: 18px;
-
+    font-size: 22px;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bolder;
     background-image: linear-gradient(to bottom, #A06C68, #A06C68, #00000000);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+header > nav > #pageTitle {
+    font-size: 50px;
+    font-family: 'Noto Serif Display', serif;
+
+   
+    background-image: linear-gradient(to bottom, #FFFAFA , #FFFAFA, #c4c4c4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 header > nav > #menu {
     display: flex;
@@ -32,7 +48,7 @@ header > nav > #menu > #menuSecoes {
 
 header > nav > #menu > #menuSecoes > a {
     text-decoration: none;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 20px;
     color: #FFFAFA;
     margin-left: 10px;

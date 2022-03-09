@@ -1,3 +1,6 @@
+@import url(fonts.css);
+
+
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -15,13 +18,13 @@ footer > #email {
 }
 
 footer > #email > h3 {
-    font-family: "Noto Serif Display", serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 25px;
     color: #FFFAFA;
 
-    margin-left: 25px;
+    margin-left: 26px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 footer > #email > .newsletter > input {
@@ -29,7 +32,8 @@ footer > #email > .newsletter > input {
     height: 25px;
     background-color: #FFFAFA;
     border-radius: 10px;
-
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
     margin-left: 25px;
 }
 
@@ -50,7 +54,8 @@ footer > #email > .newsletter > button {
     height: 25px;
     background-color: #FFFAFA;
     border-radius: 10px;
-
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
 
     cursor: pointer;
 }
@@ -74,6 +79,9 @@ footer > #info {
     grid-template-rows: 1fr 1fr;
     grid-template-areas:    "phone email"
                             "place politica";
+
+    font-family: 'Nunito', sans-serif;
+
 }
 
 footer > #info > a {
@@ -122,6 +130,9 @@ footer > #socialMedia {
     grid-template-areas:    "a b"
                             "c d"
                             "e f";
+
+    font-family: 'Nunito', sans-serif;
+
 
 }
 

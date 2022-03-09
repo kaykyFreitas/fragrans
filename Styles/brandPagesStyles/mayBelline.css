@@ -1,6 +1,8 @@
 @import url(../generalStyles/header.css);
 @import url(../generalStyles/brandPageGrid.css);
 @import url(../generalStyles/footer.css);
+@import url(../generalStyles/fonts.css);
+
 
 * {
     margin: 0;

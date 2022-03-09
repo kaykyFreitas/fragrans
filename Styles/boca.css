@@ -1,6 +1,8 @@
 @import url(generalStyles/header.css);
 @import url(generalStyles/segmentPageGrid.css);
 @import url(generalStyles/footer.css);
+@import url(generalStyles/fonts.css);
+
 
 * {
     margin: 0;
@@ -23,17 +25,6 @@ body {
 
     background-color: #c4c4c4;
 }
-
-header > nav > #boca {
-    margin-top: 5px;
-    font-size: 50px;
-
-    background-image: linear-gradient(to bottom, #FFFAFA , #FFFAFA, #c4c4c4);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 
 #productsContainer {
     width: 95%;
@@ -63,10 +54,10 @@ header > nav > #boca {
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: 40px;
-    font-weight: 300;
     color: #FFFAFA;
     font-weight: bolder;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
+
 }
 
 

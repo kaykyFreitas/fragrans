@@ -1,5 +1,8 @@
 @import url(generalStyles/header.css);
 @import url(generalStyles/footer.css);
+@import url(generalStyles/fonts.css);
+
+
 /* Reset */
 * {
     margin: 0;
@@ -7,15 +10,12 @@
     border: 0;
 }
 
-/* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500&display=swap');
-
 /* Container */
 #container {
     background-color: #B17575;
     text-align: center;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 header > #banner {
@@ -34,7 +34,7 @@ header > #banner > img {
 }
 
 header > #banner > h1 {
-    font-size: clamp(100px, 50%, 80px);
+    font-size: clamp(100px, 50%, 40px);
     font-family: 'Noto Serif Display', serif;
 
     background-image: linear-gradient(to bottom, #A06C68, #A06C68, #00000000);
@@ -78,7 +78,7 @@ header > #banner > h1 {
     font-size: clamp(60px, 50%, 40px);
     margin-bottom: 15px;
 
-    background-image: linear-gradient(to bottom, #e9c6c4, #e6bcb9, #00000000);
+    background-image: linear-gradient(to bottom, #e9c6c4, #e6bcb9, #e6bcb900);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -146,7 +146,7 @@ header > #banner > h1 {
     font-size: clamp(45px, 50%, 55px);
     font-family: 'Noto Serif Display', serif;
 
-    background-image: linear-gradient(to bottom, #AC3333 , #AC3333, #AC333300);
+    background-image: linear-gradient(to bottom, #AC3333 , #AC3333, #AC333350);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -156,7 +156,7 @@ header > #banner > h1 {
     font-size: clamp(45px, 50%, 55px);
     font-family: 'Noto Serif Display', serif;
 
-    background-image: linear-gradient(to bottom, #746868E0, #D9C6C6, #D9C6C6);
+    background-image: linear-gradient(to bottom, #746868E0, #D9C6C6, #D9C6C650);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
